@@ -4,18 +4,6 @@ import { uploadDataToS3 } from '../awsConfig';
 import { useNavigate } from 'react-router-dom';
 import './NewTree.css';
 
-const createNewNode = (text) => {
-  return {
-    id: uuidv4(),
-    text: text,
-    type: 'info',
-    subheading: '',
-    yes: null,
-    no: null,
-    next: null
-  };
-};
-
 const NewTree = ({ onFlowchartSaved }) => {
   const navigate = useNavigate();
   const [nodes, setNodes] = useState([]);

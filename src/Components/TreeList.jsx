@@ -14,38 +14,6 @@ import dagre from 'dagre';
 const nodeWidth = 180; // Slightly increased for text visibility
 const nodeHeight = 60; // Reduced height
 
-const getNodeType = (item) => {
-  if (item.yes || item.no) return 'decision';
-  if (item.next === null) return 'end';
-  return 'default';
-};
-
-const getNodeStyle = (type) => {
-  switch (type) {
-    case 'decision':
-      return {
-        background: '#fff3cd',
-        border: '2px solid #ffc107',
-        padding: '10px',
-        borderRadius: '8px',
-      };
-    case 'end':
-      return {
-        background: '#f8d7da',
-        border: '2px solid #dc3545',
-        padding: '10px',
-        borderRadius: '50%',
-      };
-    default:
-      return {
-        background: '#d1e7dd',
-        border: '2px solid #198754',
-        padding: '10px',
-        borderRadius: '4px',
-      };
-  }
-};
-
 const getLayoutedElements = (nodes, edges, direction = 'TB') => {
   const dagreGraph = new dagre.graphlib.Graph();
   dagreGraph.setDefaultEdgeLabel(() => ({}));
@@ -214,7 +182,7 @@ const TreeList = () => {
       setNodes(layoutedNodes);
       setEdges(layoutedEdges.filter((edge) => edge.source && edge.target));
     }
-  }, [location]);
+  }, [location, setNodes, setEdges]); // Added setNodes and setEdges as dependencies
 
   return (
     <div style={{ width: '100%', height: '100vh' }}>
