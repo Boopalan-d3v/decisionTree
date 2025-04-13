@@ -1,0 +1,244 @@
+.new-tree-container {
+  padding: 20px 20px 20px 280px; /* Top Right Bottom Left */
+  max-width: 900px; /* Reduced from 1100px */
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+  width: 70%; /* Reduced from 100% */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px; /* Reduced from 16px */
+}
+
+.connections-section,
+.preview-section {
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+}
+
+.connections-section select {
+  width: 60%; /* Smaller width for connection dropdowns */
+}
+
+.btn-add,
+.btn-update,
+.btn-save {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.btn-add {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.btn-update {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.btn-save {
+  background-color: #6c757d;
+  color: white;
+  width: 70%; /* Match input width */
+  margin-top: 20px;
+  margin-left: 0; /* Remove extra left margin */
+}
+
+.message {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #d4edda;
+  color: #0d6efd;
+  text-align: center;
+}
+
+.preview-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.preview-section li {
+  padding: 15px;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.subheading {
+  color: #6c757d;
+  font-style: italic;
+  margin: 5px 0;
+}
+
+.custom-input {
+  width: 70%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.custom-input:focus {
+  outline: none;
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 2px rgba(13, 110, 253, 0.25);
+}
+
+.existing-node-select {
+  width: 70%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.flowchart-name-input {
+  width: 70%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.flowchart-name-input:focus {
+  outline: none;
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 2px rgba(13, 110, 253, 0.25);
+}
+
+.flowchart-name-input:invalid {
+  border-color: #dc3545;
+}
+
+.flowchart-name-input:invalid:focus {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 2px rgba(220, 53, 69, 0.25);
+}
+
+.btn-cancel {
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-cancel:hover {
+  background-color: #c82333;
+}
+
+/* Adjust spacing for buttons when editing */
+.node-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.node-form .button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.required {
+  color: #dc3545;
+  margin-left: 4px;
+}
+
+.question-input:invalid {
+  border-color: #dc3545;
+}
+
+.question-input:invalid:focus {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 2px rgba(220, 53, 69, 0.25);
+}
+
+.node-list {
+  list-style: none;
+  padding: 0;
+}
+
+.node-item {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 15px;
+}
+
+.node-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.btn-delete {
+  padding: 4px 8px;
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-delete:hover {
+  background-color:#0869fb;
+}
+
+.node-content {
+  width: 100%;
+}
+
+.subheading {
+  color: #6c757d;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.flowchart-header {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+}
+
+.flowchart-name.clickable {
+  color: #007bff;
+  cursor: pointer;
+  margin: 0;
+  font-size: 1.1em;
+}
+
+.flowchart-name.clickable:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}

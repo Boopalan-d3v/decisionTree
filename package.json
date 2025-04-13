@@ -1,0 +1,60 @@
+{
+  "name": "decision-submission",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.758.0",
+    "@projectstorm/react-diagrams": "^7.0.4",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
+    "@testing-library/user-event": "^13.5.0",
+    "aws-sdk": "^2.1692.0",
+    "axios": "^1.8.4",
+    "dagre": "^0.8.5",
+    "dotenv": "^16.4.7",
+    "firebase": "^11.4.0",
+    "install": "^0.13.0",
+    "jspdf": "^3.0.0",
+    "npm": "^10.9.2",
+    "os-browserify": "^0.3.0",
+    "path-browserify": "^1.0.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-flow": "^1.0.3",
+    "react-router-dom": "^7.3.0",
+    "react-scripts": "^5.0.1",
+    "reactflow": "^11.11.4",
+    "uuidv4": "^6.2.13",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.0.10"
+  }
+}
